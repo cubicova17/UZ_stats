@@ -97,7 +97,7 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 CRON_CLASSES =(
-    "uz.MyCronJob",
+    'uz.crons.MyCronJob',
     # ...
     )
 ROOT_URLCONF = 'uz.urls'

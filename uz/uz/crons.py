@@ -1,6 +1,6 @@
 from django_cron import CronJobBase, Schedule
 import logging
-from uz.uz.models import Entry
+from uz.models import Entry
 
 class MyCronJob(CronJobBase):
     RUN_EVERY_MINS = 5 # every 2 hours
