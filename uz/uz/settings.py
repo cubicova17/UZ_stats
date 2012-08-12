@@ -96,7 +96,10 @@ MIDDLEWARE_CLASSES = (
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
-
+CRON_CLASSES =(
+    "uz.uz.MyCronJob",
+    # ...
+    )
 ROOT_URLCONF = 'uz.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
@@ -120,6 +123,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'uz',
+    'django_cron',
 )
 
 # A sample logging configuration. The only tangible logging
