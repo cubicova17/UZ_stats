@@ -97,7 +97,7 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 CRON_CLASSES =(
-    "uz.MyCronJob",
+    'uz.crons.MyCronJob',
     # ...
     )
 ROOT_URLCONF = 'uz.urls'
@@ -122,7 +122,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'uz',
+    'south',
+	'uz',
     'django_cron',
 )
 
