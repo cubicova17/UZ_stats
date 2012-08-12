@@ -9,6 +9,7 @@ class MyCronJob(CronJobBase):
     code = 'uz.my_cron_job'    # a unique code
 
     def do(self):
-        p = Entry(train="Ogoog", pub_date=timezone.now())
+        logging.error("zalupa")
+	p = Entry(train="Ogoog", pub_date=timezone.now())
         p.save()
         logging.error("Ty huy")
