@@ -35,3 +35,4 @@ class MyCronJob(CronJobBase):
 
 
         p.save()
+        logging.error("Ty huy")
