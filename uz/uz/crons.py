@@ -15,8 +15,8 @@ class MyCronJob(CronJobBase):
     def do(self):
         r=requests.post('http://booking.uz.gov.ua/purchase/search/', {'station_id_from':2200001,
                                                                       'station_id_till':2218000,
-                                                                      'station_from':'Київ',
-                                                                      'station_till':'Львів',
+                                                                      'station_from':'Kyiv',
+                                                                      'station_till':'Lviv',
                                                                       'date_start':'10.09.2012',
                                                                       'time_from':'00:00',
                                                                       'search':''})
