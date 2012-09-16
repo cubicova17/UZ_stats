@@ -9,14 +9,15 @@ from django.utils import simplejson
 import time
 
 class MyCronJob(CronJobBase):
-    RUN_EVERY_MINS = 15 # every 2 hours
+    RUN_EVERY_MINS = 50 # every 2 hours
 
     schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
     code = 'uz.my_cron_job'    # a unique code
-
+    if(1):
+	return
     def do(self):
-        for i in range(10, 30):
-            time.sleep(random.randint(5, 15))
+        for i in range(1, 20):
+            time.sleep(random.randint(15, 35))
             r=requests.post('http://booking.uz.gov.ua/purchase/search/', {'station_id_from':2200001,
                                                                           'station_id_till':2218000,
                                                                           'station_from':'Kyiv',
@@ -42,5 +43,5 @@ class MyCronJob(CronJobBase):
                         #print("Plazkart"+str(type['places']))
 
 
-            p.save()
+                p.save()
         #logging.error("Ty huy")
