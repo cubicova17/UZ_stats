@@ -7,6 +7,8 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
      url(r'^$', 'forex.views.home', name='home'),
+     url(r'^StockPrice_HTML.data$', 'forex.views.redir', name='redir'),
+ 
     # url(r'^uz/', include('uz.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
